@@ -9,14 +9,14 @@ class DependencyInjection {
     }
 
     public static function getConnection(): Connection {
-        return new Connection(
-            host: 'localhost',
-            port: 3306,
-            database: 'crud',
-            username: 'root',
-            password: '',
-        );
-    }
+    return new Connection(
+        host: 'mysql-2a523c42-unicartagena-f1e0.d.aivencloud.com',
+        port: 28943,
+        database: 'defaultdb',
+        username: 'avnadmin',
+        password: 'AVNS_WmMwFHDUihd3E-PvpiX',
+    );
+}
 
     public static function getPdo(): PDO {
         return self::getConnection()->createPdo();
