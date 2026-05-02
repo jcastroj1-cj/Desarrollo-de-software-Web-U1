@@ -14,7 +14,7 @@ class DependencyInjection {
         port: 28943,
         database: 'defaultdb',
         username: 'avnadmin',
-        password: 'AVNS_WmMwFHDUihd3E-PvpiX',
+        password: 'AVNS_UzVyFrNtbcIFJliJG0h',
     );
 }
 
