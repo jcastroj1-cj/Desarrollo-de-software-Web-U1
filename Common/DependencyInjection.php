@@ -8,13 +8,13 @@ class DependencyInjection {
         ClassLoader::register();
     }
 
-    public static function getConnection(): Connection {
+public static function getConnection(): Connection {
     return new Connection(
-        host: 'mysql-2a523c42-unicartagena-f1e0.d.aivencloud.com',
-        port: 28943,
-        database: 'defaultdb',
-        username: 'avnadmin',
-        password: 'AVNS_WmMwFHDUihd3E-PvpiX',
+        host:     $_ENV['DB_HOST'],
+        port:     (int) $_ENV['DB_PORT'],
+        database: $_ENV['DB_NAME'],
+        username: $_ENV['DB_USER'],
+        password: $_ENV['DB_PASSWORD'],
     );
 }
 
